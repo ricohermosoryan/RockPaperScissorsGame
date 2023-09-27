@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockPaperScissors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+  <div class="loginArea container mx-auto flex justify-center items-center h-screen">
+    <div class="loginForm text-black shadow shadow-black h-96 w-96 relative rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500">
+      <img src="https://media.istockphoto.com/id/1056840214/vector/rock-paper-scissors-vector-illustration.jpg?s=612x612&w=0&k=20&c=6KEBfon5f9BXXhLiu9JfOk6EHsM193SiWMcqDjN1jqM=" alt="image"
+      class="h-64 w-64 absolute top-5 start-16 border rounded-md shadow shadow-black">
+      <input class="border border-sky-500 absolute bottom-16 start-24" type="text" id="userName" placeholder="Enter Your Name"> <br>
+      <button class="border border-slate-300 hover:border-slate-400 rounded-md w-40 shadow absolute bottom-4 start-28 bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-pink-500 hover:to-yellow-500" id="login" onclick="loginClicked()">Start Game</button>
+    </div>
+  </div>
+
+<div class="hidden container mx-auto flex justify-center items-center h-screen pt-36">
+  <div class="text-black shadow shadow-black h-4/5 relative rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <h1 class="text-center text-4xl font-medium pb-5 pt-5">Rock Paper Scissors Game</h1>
+  <div class="details text-xl font-semibold">
+    <div >
+      <p>User</p>
+      <p id="user">0</p>
+    </div>
+    <div>
+      <p>Tied</p>
+      <p id="tied">0</p>
+    </div>
+    <div>
+      <p>Bot</p>
+      <p id="both">0</p>
+    </div>
+  </div>
+<div class="flex justify-evenly align-center pt-20 ms-20 text-3xl font-semibold">
+  <div class="w-20 h-20">
+    <p class="">Bot</p>
+  <p id="bothResult" ></p>
+  </div>
+  <div class="w-96 h-20">
+    <span >Player: <span id="userData"></span></span>
+  <div id="userResult" ></div>
+  </div>
+  
+</div>
+
+
+
+  <div class=" flex container mx-auto justify-center gap-10 mt-32">
+    <button onclick="Rock()"><img src="image/Rock.PNG" class="rounded-full bg-auto h-20 w-20" alt="Rock"></button>
+  <button onclick="Paper()"><img src="image/Paper.PNG" class="rounded-full bg-auto h-20 w-20" alt=""></button>
+  <button onclick="Scissors()"><img src="image/scissors.PNG" class="rounded-full bg-auto h-20 w-20" alt=""></button> <br>
+  </div>
+  <button class="absolute start-32 border border-slate-300 hover:border-slate-400 rounded-md w-10/12 shadow bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-pink-500 hover:to-yellow-500 mt-8" onclick="play()">Play</button>
+  </div>
+</div>
+  
+
+  <script src="rps.js"> 
+  </script>
+</body>
+</html>
